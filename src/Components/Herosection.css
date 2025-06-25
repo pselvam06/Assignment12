@@ -22,75 +22,43 @@
   );
 }
 
-.z-index-1 {
-  z-index: 1;
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-title {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
-  line-height: 1.1;
+   width: 500px;
+  margin: 0 auto;
+  text-align: center;
+font-size: 4rem;
   font-weight: 800;
   color: white;
   
 }
 
-.email-form .form-control {
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;  
- 
+.hero-subtitle {
+  font-size: 1.25rem;
   
 }
 
-.email-form .form-control:focus {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.25);
-  border-color: rgba(229, 9, 20, 0.5);
-  color: white;   
- }
-
-.email-form .btn {
-  background-color: #e50914;
-  border: none;
-  font-weight: 500;
-  white-space: nowrap;
- 
+.cta-text {
+  font-size: 1rem;
 }
 
 
 
 
-
-/* Responsive Adjustments */
-@media (max-width: 767.98px) {
-  .hero-section {
-    min-height: 80vh;
-    padding: 80px 0;
-    text-align: center;
-  }
-  
-  .hero-title {
-    font-size: 2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.25rem;
-  }
-  
-  .email-form .form-floating {
-    margin-bottom: 1rem;
-  }
-}
 
 @media (min-width: 768px) {
   .hero-title {
-    font-size: calc(1.525rem + 3.3vw);
+    font-size: 3rem;
   }
-}
-
-@media (min-width: 1400px) {
-  .hero-title {
-    font-size: 4rem;
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .cta-text {
+    font-size: 1.1rem;
   }
 }

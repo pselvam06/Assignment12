@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #141414;
+  background-color: black;
+}
+
+.position-relative {
+  position: relative;
+  width: 100%;
+  
+
 }
 
 .netflix-wave {
@@ -22,4 +29,132 @@
   background: #fff;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   transform: scaleY(0.5);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0,  0, 0.2);
+  border-color: #e50914;
+  
+}
+
+.card:hover .icon-wrapper {
+    transform: scale(1.1);
+  } 
+
+
+  .netflix-card {
+    transition: all 0.3s ease;
+   background: linear-gradient(
+      to bottom,
+      rgba(22, 13, 121, 0.8),
+      rgba(229, 9, 20, 0.5)
+       
+    );
+    border: 1px solid #333;
+    height: 40vh;
+    }
+  
+  .netflix-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2);
+    border-color: #e50914;
+  }
+  
+  .icon-wrapper {
+    transition: transform 0.3s ease;
+  }
+  
+  .netflix-card:hover .icon-wrapper {
+    transform: scale(1.1);
+  }
+
+/* Container adjustments */
+
+
+/* FAQ Accordion background and text */
+#faqAccordion {
+  background-color: #141414; /* Netflix very dark bg */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.25);
+ 
+}
+
+/* Accordion item border */
+.accordion-item {
+  background-color: #1f1f1f;
+  border: none;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+/* Accordion buttons */
+.accordion-button {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Accordion button hover & focus */
+.accordion-button:not(.collapsed) {
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button:hover:not(.collapsed),
+.accordion-button:focus {
+  background-color: #b00610;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Accordion body */
+.accordion-body {
+  background-color: #141414;
+  color: #ccc;
+  font-size: 1rem;
+ 
+  
+}
+
+/* Responsive text size */
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.transparent-input {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.transparent-input::placeholder {
+  color: #eee;
+  opacity: 1;
+}
+
+.transparent-input:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #e50914;
+  box-shadow: 0 0 5px #e50914;
+  color: #fff;
 }

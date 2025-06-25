@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './Components/NavigationBar';
 import HeroSection from './Components/HeroSection';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
+
 
 
 
@@ -13,6 +15,8 @@ function App() {
       <NavigationBar />
       <HeroSection />
       <Home />
+      <Footer />
+      
     </div>
   );
 }
