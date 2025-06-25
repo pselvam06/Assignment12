@@ -1,64 +1,91 @@
-/* Hero Section */
 .hero-section {
   background-image: url('https://i.pinimg.com/736x/af/f0/6f/aff06fb3660a32e8f90bde5c46d3c80f.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   min-height: 100vh;
-  padding: 120px 0;  
+  padding: 120px 0;
   display: flex;
   align-items: center;
-  
+  position: relative;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.533);
+  position: absolute;
+  inset: 0;
   background-image: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0.253) 60%,
-    rgba(0, 0, 0, 0.745) 100%
+    rgba(0, 0, 0, 0.84) 0%,
+    rgba(0, 0, 0, 0.641) 60%,
+    rgba(0, 0, 0, 0.514) 100%
   );
 }
 
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .hero-title {
-   width: 500px;
-  margin: 0 auto;
-  text-align: center;
-font-size: 4rem;
+  color: #fff;
+  font-size: 2rem;
   font-weight: 800;
-  color: white;
-  
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  
+  font-weight: 600;
 }
 
 .cta-text {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 
 
 
+
+@media (min-width: 576px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+ 
+}
 
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.5rem;
   }
+
   .cta-text {
     font-size: 1.1rem;
   }
+
+ 
 }
+
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.75rem;
+  }
+
+  .cta-text {
+    font-size: 1.25rem;
+  }
+}
+
+
